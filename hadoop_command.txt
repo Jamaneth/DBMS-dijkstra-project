@@ -1,0 +1,8 @@
+hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
+-input /user/hadoop/wc/input \
+-output /user/hadoop/wc/output \
+-file /home/hadoop/dijk_mapper.py \
+-mapper /home/hadoop/dijk_mapper.py \
+-file /home/hadoop/dijk_reducer.py \
+-reducer /home/hadoop/dijk_reducer.py \
+-jobconf mapred.map.tasks=1
